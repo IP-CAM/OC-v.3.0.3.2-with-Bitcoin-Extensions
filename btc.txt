@@ -1,0 +1,1 @@
+{"balance":0,"table":[{"timestamp":0,"type":"initial","amount":0,"balance":0}]}

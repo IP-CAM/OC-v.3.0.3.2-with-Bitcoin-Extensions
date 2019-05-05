@@ -1,0 +1,98 @@
+h1{
+  color:#44536A;
+}
+div.rate{
+  position:absolute;
+  right:0px;
+  top:0px;
+  color:silver;
+}
+div.box{
+  display:inline-block;
+  vertical-align:top;
+  height:500px;
+  position:relative;
+}
+div.left{
+  width:500px;
+  font-size:32px;
+}
+div.middle{
+  width:300px;
+  font-size:32px;
+}
+div.right{
+  width:100px;
+}
+div.small-price{
+  font-size:16px;
+  color:silver;
+}
+div.first{
+  position:absolute;
+  top:0px;
+  height:50px;
+  line-height:50px;
+}
+div.second{
+  position:absolute;
+  top:70px;
+  height:50px;
+  line-height: 50px;
+}
+div.big{
+  position:absolute;
+  top:70px;
+  height:150px;
+}
+div.third{
+  position:absolute;
+  top:140px;
+  height:20px;
+  line-height: 20px;}
+div.fourth{
+  position:absolute;
+  top:170px;
+  height:50px;
+}
+div.fifth{
+  position:absolute;
+  top:250px;
+  height:50px;
+  line-height: 50px;
+}
+div.sixth{
+  position:absolute;
+  top:320px;
+  height:50px;
+  line-height: 50px;
+}
+div.price{
+  width:270px;
+  background-color:#F1F1F1;
+  border:solid 3px #F7D0B6;
+  text-align:center;
+  border-radius:10px;
+  font-size:32px;
+}
+div.small-price{
+  width:100%;
+  text-align:center;
+}
+form{
+position: absolute;
+top: 0;
+bottom: 0;
+margin:auto;
+height:50px;
+}
+input.button{
+  background-color: #333;
+  color: #fff;
+  width:200px;
+  height:50px;
+  font-size:16px;
+}
+input.button:hover{
+  background-color: #59b1eb;
+}

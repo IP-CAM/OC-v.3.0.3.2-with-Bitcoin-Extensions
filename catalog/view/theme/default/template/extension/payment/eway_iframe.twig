@@ -1,0 +1,47 @@
+{% if error %}
+  <div class="alert alert-danger alert-dismissible">Payment Error: {{ error }}</div>
+{% else %}
+  {# <script src="{{ endpoint }}/api/eway_swap/static/eCrypt.js"></script> #}
+  <iframe id='paycorpIframe' src="{{ paymentPageUrl }}" width='100%' height='361px' style='border: none; overflow: hidden;'></iframe>
+  {# <div class="d-inline-block pt-2 pd-2 w-100"> #}
+  {#   <div class="float-right"> #}
+  {#     <button type="button" id="button-confirm" data-loading-text="{{ text_loading }}" class="btn btn-primary">{{ button_pay }}</button> #}
+  {#   </div> #}
+  {# </div> #}
+  <script type="text/javascript">
+    function paycorpPaymentCompleted () {
+      window.location.href = "{{ callback }}"
+    }
+  {# /** #}
+  {#  * KaniPay Rapid IFrame config object. #}
+  {#  */ #}
+  {# var KaniPayConfig = { #}
+  {# 	  {\# sharedPaymentUrl: "{{ SharedPaymentUrl }}" #\} #}
+  {# 	  paymentPageUrl: "{{ paymentPageUrl }}" #}
+  {# }; #}
+
+  {# /** #}
+  {#  * KaniPay Rapid IFrame callback #}
+  {#  */ #}
+  {# function resultCallback(result, transactionID, errors) { #}
+  {# 	  if (result == "Complete") { #}
+  {# 		  {\# window.location.href = "{{ callback }}"; #\} #}
+  {# 	  } else if (result == "Error") { #}
+  {# 		  $('#button-confirm').button('reset'); #}
+  {# 		  alert("There was a problem completing the payment: " + result); #}
+  {# 	  } else { #}
+  {# 		  $('#button-confirm').button('reset'); #}
+  {# 	  } #}
+  {# } #}
+
+  {# $('#button-confirm').bind('click', function() { #}
+  {#   $('#button-confirm').button('loading'); #}
+  {#   var interval = setInterval(function () { #}
+  {#     if (typeof(eCrypt) !== 'undefined') { #}
+  {#       clearInterval(interval); #}
+  {#       eCrypt.showModalPayment(KaniPayConfig, resultCallback); #}
+  {#     } #}
+  {#   }, 100); #}
+  {# }); #}
+  </script>
+{% endif %}
