@@ -1,0 +1,1 @@
+{"balance":100.10544938604635,"table":[{"timestamp":0,"customerid":"NULL","type":"initial","amount":0,"balance":100},{"timestamp":"1557045132","customerid":"x","type":"purchase","amount":"0.10544938604635","balance":100.10544938604635}]}
